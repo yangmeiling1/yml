@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>手机端页面</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+	<script src="font/iconfont.js"></script>
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<style type="text/css">
+		body{
+			width: 16rem;
+			height: 47rem;
+			background-color: rgba(0,0,0,.1);
+		}
+		.icon {
+  		width: 1em;
+  		height: 1em;
+  		vertical-align: -0.15em;
+  		fill: currentColor;
+  		overflow: hidden;
+			}
+
+		.top{
+			height: 3.65rem;
+			background-color: #38474F;
+			padding-top: 0.6rem;
+		}
+		.top .s1{
+			color: white;
+			font-size:0.5rem;
+			margin-left: 0.5rem;
+			font-weight: bold;
+		}
+		.top .icon-sdf{
+			margin-left: 0.6rem;
+			font-size: 0.8rem;
+			font-weight: bold;
+		}
+		.top .icon-ai66{
+			margin-left: 8rem;
+			font-size: 0.8rem;
+			font-weight: bold;
+		}
+		.top button{
+			width: 7.2rem;
+			height: 1.55rem;
+			background-color: rgba(0,0,0,.5);
+			border:none;
+			color: white;
+			font-size: 0.4rem;
+			border-radius: 0.125rem;
+			margin-top: 0.5rem;
+		}
+		.top button:hover{
+			background-color: #F6846A;
+		}
+		.top .b1{
+			margin-left: 0.6rem;
+		}
+		.center{
+			width: 14.75rem;
+     	height: 14.8rem;
+     	background-color:white;
+     	margin: 0.65rem auto;
+     	border-radius: 0.4rem;
+		}
+		.center img{
+			width: 14.75rem;
+		}
+		.center p{
+			font-size: 0.7rem;
+			margin-top: 0.5rem;
+			margin-left: 1.1rem;
+			float: left;
+		}
+		.center span{
+			width: 3.65rem;
+     	height: 1.7rem;
+     	background-color: rgba(0,0,0,.4);
+     	float: right;
+     	color: white;
+     	font-size: 0.7rem;
+     	line-height: 1.7rem;
+     	text-align: center;
+     	border-radius: 1rem;
+     	margin-top: 0.25rem;
+     	margin-right: 0.25rem;
+		}
+		.c3{
+			width:14.75rem;
+			height: 2.65rem;
+			margin: 0.65rem auto;
+			background-color:white;
+			border-radius: 0.4rem;
+		}
+		.c3 span{
+			font-size:0.7rem;
+			margin-left: 1rem;
+			line-height: 2.65rem;
+			padding-left: .05rem;
+		}
+		.c3 .icon-jiahao{
+			font-weight: bold;
+		}
+		.c4{
+			width:14.75rem;
+			height: 12.475rem;
+			margin: 0.65rem auto;
+			background-color:white;
+			border-radius: 0.4rem;
+		}
+		.c4 h3{
+			font-size: 0.9rem;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.1rem;
+			padding-top: 0.4rem;
+		}
+		.c4 .p2{
+			font-size: 0.8rem;
+			color: gray; 
+		}
+		.c4 .d{
+			margin-top: 0.8rem;
+			margin-left: 3.5rem;
+		}
+		.c4 p{
+			width: 1.75rem;
+     	height: 1.75rem;
+			background-color:#F0C9CE;
+			float: left;
+			margin-left: 0.7rem;
+			text-align: center;
+		}
+		.c4 .p3{
+			background-color: #AF687A;
+		}
+		.c4 .p4{
+			background-color: #87A6B2;
+		}
+		.c4-b{
+			width: 12.15rem;
+			margin-left:1.4rem;
+			margin-top: 0.6rem;
+			border-top: 0.05rem solid #DADADE;
+		}
+		.c4-b ul li{
+			float: left;
+			width: 1.75rem;
+     	height: 1.75rem;
+     	background-color: #DADADE;
+     	margin-left: 0.6rem;
+     	margin-top: 0.4rem;
+     	font-size: 0.7rem;
+     	text-align: center;
+     	line-height: 1.75rem;
+		}
+		.c4-b ul li:hover{
+			background-color: #67B0D6;
+			color: white;
+		}
+		.c5 button{
+			  width: 6.95rem;
+     		height: 1.5rem;
+				background-color: #3A4144;
+				border:none;
+				margin-top: 1.45rem;
+				margin-left: 4.6rem;
+				color: white;
+				border-radius: 0.5rem;
+		}
+		.f{
+			margin-top: 2rem;
+			position: relative;
+		}
+		.f p{
+			font-size: 0.7rem;
+			margin-left: 0.9rem;
+		}
+		.f p span{
+			display: inline-block;
+			height: 0.05rem;
+			width: 9rem;
+			background-color:#999999;
+			float: right;
+			margin-top: 0.5rem;
+			margin-right: 0.9rem;
+		}
+		.f svg{
+			font-size: 2rem;
+			margin-left: 3.2rem;
+			margin-top: 1rem;
+		}
+		.f .i1{
+			margin-left: 0.9rem;
+		}
+		.f i{
+			display: inline-block;
+			font-style: normal;
+			font-size: 0.04rem;
+    	 width: 1.55rem;
+     		height: 1.1rem;
+     		background-color: white;
+     		line-height: 1.1rem;
+     		text-align: center;
+		}
+		.f .l1{
+			position: absolute;
+			top: 2.3rem;
+			left: 3.3rem;
+		}
+		.f .l2{
+			position: absolute;
+			top: 2.3rem;
+			left: 8.8rem;
+		}
+		.f .l3{
+			position: absolute;
+			top: 2.3rem;
+			left: 14.2rem;
+		}
+	</style>
+</head>
+<body>
+	<script>
+       	window.onload = window.onresize = function(){
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+				var _html = document.getElementsByTagName('html')[0];
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+       	 }
+</script>
+<div class="top">
+	<span class="iconfont icon-sdf"></span>
+	<span class="s1">Woman,Dresses</span>
+	<span class="iconfont icon-ai66"></span>
+	<button class="b1">ADD TO WISHILST</button>
+	<button>ADD TO CART</button>
+</div>
+<div class="center">
+		<img src="center.jpg">
+		<p>Elegent Pink Dresses</p>
+		<span>$605.00</span>
+</div>
+<div class="c3">
+	<span class="iconfont icon-jiahao"></span>
+	<span>Description</span>
+</div>
+<div class="c4">
+	<h3><span class="iconfont icon-shuidi">Colour</span></h3>
+	<h3 class="p2">Choose a Colour for item</h3>
+	<div class="d clearfix">
+		<p><span class="iconfont icon-duigoudaibiankuang"></span></p>
+		<p class="p3"></p>
+		<p class="p4"></p>
+	</div>
+	<div class="c4-b">
+		<h3><span class="iconfont icon-yijia ">Size</span></h3>
+		<h3 class="p2">Size available for this item</h3>
+		<ul class="clearfix">
+			<li>6</li>
+			<li>8</li>
+			<li>10</li>
+			<li>12</li>
+			<li>14</li>
+		</ul>
+	</div>
+</div>
+<div class="c5">
+	<button>Add To Cart</button>
+</div>
+<div class="f">
+		<p>SHARE ON<span></span></p>
+		<svg class="icon i1" aria-hidden="true">
+  	<use xlink:href="#icon-gezi"></use>
+		</svg>
+		<svg class="icon" aria-hidden="true">
+  	<use xlink:href="#icon-f"></use>
+		</svg>
+		<svg class="icon" aria-hidden="true">
+  	<use xlink:href="#icon-weibo-copy-copy"></use>
+		</svg>
+		<i class="l1">112</i>
+		<i class="l2">112</i>
+		<i class="l3">112</i>
+</div>
+</body>
+</html>
